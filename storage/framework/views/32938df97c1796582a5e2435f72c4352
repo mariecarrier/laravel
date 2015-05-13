@@ -278,16 +278,19 @@
                 <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
                </select>
                 <br/>
+                
+                <!--
                 <p>
                 <label for='includecandles' class="inlinelabel">Include Candles($5)</label>
                <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" />
-               </p>
+               </p>-->
                
+               <!--
                 <p>
                 <label class="inlinelabel" for='includeinscription'>Include Inscription($20)</label>
                 <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
                 <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
-                </p>
+                </p>-->
                 <div id="totalPrice"></div>
                 
                 </fieldset>

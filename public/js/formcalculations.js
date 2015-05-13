@@ -124,7 +124,8 @@ function calculateTotal()
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
-    var cakePrice = getCakeSizePrice() + getFillingPrice() + candlesPrice() + insciptionPrice();
+   // MM modifications 
+   var cakePrice = getCakeSizePrice() + getFillingPrice();
     
     //display the result
     var divobj = document.getElementById('totalPrice');
