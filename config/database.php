@@ -52,12 +52,25 @@ return [
 			'prefix'   => '',
 		],
 
-		'mysql' => [
+		/*'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
-			'password'  => env('DB_PASSWORD', ''),
+			'host'      => env('DB_HOST', '127.0.0.1'),
+			'database'  => env('DB_DATABASE', 'laravel_0'),
+			'username'  => env('DB_USERNAME', 'root'),
+			'password'  => env('DB_PASSWORD', '4x3rabab'),
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+			'strict'    => false,
+		],
+*/
+
+'mysql' => [
+			'driver'    => 'mysql',
+			'host'      => '127.0.0.1',
+			'database'  => 'laravel_0',
+			'username'  => 'assIse101',
+			'password'  => 'revello101',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

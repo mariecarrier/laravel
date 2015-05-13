@@ -40,9 +40,9 @@ class Connector {
 	 */
 	public function createConnection($dsn, array $config, array $options)
 	{
-		$username = array_get($config, 'username');
+		$username = array_get($config, 'root');
 
-		$password = array_get($config, 'password');
+		$password = array_get($config, '4x3rabab');
 
 		return new PDO($dsn, $username, $password, $options);
 	}

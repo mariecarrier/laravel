@@ -26,6 +26,19 @@ Route::get('/inscription-test/', function()
     return View::make('inscription-test')->with('name', 'friend');
 });
 
+Route::get('/inscription-v2/', function() 
+{
+    return View::make('inscription-v2')->with('name', 'friend');
+});
+
+
+Route::get('/db', function() 
+{
+    return DB::select('select database();');
+});
+
+
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([

@@ -7,14 +7,12 @@
     <meta name="keywords" content="" />
     <meta name="author" content="nileforest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-    <!-- Favicone Icon -->
+ 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
 
-    <!-- CSS -->
+
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -37,15 +35,6 @@
 
 <body class="full-intro">
 
-    <!-- Preloader -->
-    <!--<section id="preloader">
-        <div class="loader" id="loader">
-            <div class="loader-img"></div>
-        </div>
-    </section-->
-    <!-- End Preloader -->
-
-    <!-- Sidemenu -->
     <section class="side-menu cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
         <a class="menu-close toggle-menu menu-right push-body"><i class="ion ion-android-close"></i></a>
         <h5 class="white">Sign In</h5>
@@ -69,9 +58,7 @@
             <li><a href="contact-1.html">Contact Us</a></li>
         </ul>
     </section>
-    <!--End Sidemenu -->
-
-    <!-- Search menu Top -->
+ 
     <section class=" top-search-bar cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
         <div class="container">
             <div class="search-wraper">
@@ -81,82 +68,52 @@
             </div>
         </div>
     </section>
-    <!--End Search menu Top -->
 
-    <!-- Site Wraper -->
     <div class="wrapper">
 
-        <!-- HEADER -->
         <header class="header">
             <div class="container">
 
-                <!-- logo -->
                 <div class="logo">
                     <a href="home.html">
                         <img class="l-white l-black l-color" src="img2/logo-assises-de-la-spiritualite.png" />
-                        <!--<img class="l-black" src="img/logo-black.png" />
-                        <img class="l-white" src="img/logo-white.png" />
-                        <img class="l-color" src="img/logo-color.png" /> -->
+           
                     </a>
                 </div>
-                <!--End logo-->
-
-                <!-- Rightside Menu (Search, Cart, Bart icon) -->
+              
                 <div class="side-menu-btn">
                     <ul>
-                        <!-- Search Icon -->
-                     
-                        <!-- End Search Icon -->
 
-                        <!-- Cart Icon -->
-              
-                        <!-- End Cart Icon -->
-
-                        <!--Sidebar Menu Icon-->
-                       
-                        <!-- End Sidebar Menu Icon-->
                     </ul>
                 </div>
-                <!-- End Rightside Menu -->
 
-                <!-- Navigation Menu -->
                 <nav class='navigation'>
                     <ul>
                         <li>
-                            <a href="/assises1.html">Accueil</a>
+                            <a href="/">Accueil</a>
                         </li>
 
                         <li class="nav-has-sub">
-                            <a href="/details.html" target="_parent">Détails</a>
-                            <!-- Nav Dropdown -->
-                            
-                            <!-- End Nav Dropdown-->
+                            <a href="/details.html" target="_parent">Détail</a>
+                 
                         </li>
                         <li>
-                            <a href="/inscription.html" target="_parent">Inscription</a>
-                            <!-- Nav Dropdown -->
-                
-                            <!-- End Nav Dropdown -->
+                            <a href="/inscription" target="_parent">Inscription</a>
+        
                         </li>
                         <li>
                             <a href="/contactez-nous.html" target="_parent">Contactez-nous</a>
-                            <!-- Nav Dropdown -->
-                            
-                            <!-- End Nav Dropdown -->
+                   
                         </li>
             
                 
                     </ul>
                 </nav>
-                <!--End Navigation Menu -->
+     
 
             </div>
         </header>
-        <!-- END HEADER -->
 
-        <!-- CONTENT --------------------------------------------------------------------------------->
-
-        <!-- Intro Section -->
         <section class="inner-intro bg-img2 overlay-light parallax parallax-background2">
             <div class="container">
                 <div class="row title">
@@ -173,10 +130,7 @@
             </div>
         </section>
         <div class="clearfix"></div>
-        <!-- End Intro Section -->
 
-
-        <!-- About Section -->
         <section class="ptb ptb-sm-80">
             <div class="container">
                 <div class="row">
@@ -206,11 +160,10 @@
 
      
 
-        <!-- Testimonials -->
         <section id="testimonial" class="overlay-dark80 dark-bg ptb ptb-sm-80" style="background-image: url('img/full/252.jpg');" data-stellar-background-ratio="0.4">
             <div class="container">
           
-                    <!-- Newsletter -->
+          
                     <div class="col-md-4 col-sm-5 col-xs-12 mb-xs-30">
                         <div class="newsletter">
                             <form>
@@ -223,7 +176,7 @@
 
             </div>
         </section>
-        <!-- End Testimonials -->
+
 
         <!-- Service -->
         <section class="ptb ptb-sm-80">
