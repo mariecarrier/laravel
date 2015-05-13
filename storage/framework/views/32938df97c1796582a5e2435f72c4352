@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="full-intro" onload='hideTotal()'>
+<body class="full-intro page-sec" onload='hideTotal()'>
 
 <!-- Preloader --> 
 <!--<section id="preloader">
@@ -85,7 +85,7 @@
     <div class="container"> 
         
         <!-- logo -->
-        <div class="logo"> <a href="home.html"> <img class="l-white l-black l-color" src="img2/logo-assises-de-la-spiritualite.png" /> 
+        <div class="logo page-sec"> <a href="home.html"> <img class="l-white l-black l-color" src="img2/logo-assises-de-la-spiritualite.png" /> 
             <!--<img class="l-black" src="img/logo-black.png" />
                         <img class="l-white" src="img/logo-white.png" />
                         <img class="l-color" src="img/logo-color.png" /> --> 
@@ -155,15 +155,14 @@
     <div class="wrapper-box2">
         <div class="col-md-10">
             <h1>Inscription</h1>
-            <br>
+   
             <p>Ces deuxièmes Assises de la Spiritualité ont été réalisées grâce au partenariat des Assomptionnistes canadiens, du Montmartre de Québec, des éditeurs québécois Novalis et Médiaspaul, spécialistes en publications spirituelles et des éditions Albin Michel Spiritualité, éditeurs de Jean-Yves Leloup.</p>
-            <br>
-            <p>Pour vous inscrire et réserver votre place, il vous suffit de remplir le formulaire ci-desous. Si vous voules payer <strong>par chèque</strong>, veuillez s.v.p. nous téléphoner au <strong>1 866-844-2111 (poste 246</strong>).</p>
-            <br>
-            <p style="font-weight:bold; color: red;">Date limite pour vous inscrire : 10 juin 2015</p>
-            <br>
+       
+            <p>Pour vous inscrire et réserver votre place, il vous suffit de remplir le formulaire ci-desous. Si vous voulez payer <strong>par chèque</strong>, veuillez s.v.p. nous téléphoner au <strong>1 866-844-2111 (poste 246</strong>).</p>
+         
+            <p style="font-weight:bold;">Date limite pour l'inscription : 10 juin 2015</p>
+     
             <hr>
-            <br>
             <div style="clear:both"></div>
             
             
@@ -180,8 +179,8 @@
              
              
              <div class="wrapper">
-             
-             <h4>1er participant</h4>
+             <div class="coordonnees">
+             <h4>Coordonnées</h4>
              
                 <p class="wrapper-input civilite">
                     <label for="courriel">Civilité</label>
@@ -227,17 +226,14 @@
                 </p>
                 
                
-                 </div>
-                 
-                  
-                <p class="wrapper-input bouton-rajout">
-                    <input name="bouton-rajout" id="bouton-rajout" type="submit" class="inputbox form-enregi" alt="username" size="18"value="Rajouter un participant">
-                </p>
+               
+              </div>   
+         
                 
                 
-                
+               
                 <div style="clear:both"></div>
-                
+                 <hr class="diviseur">
                 
                 
                 
@@ -245,39 +241,58 @@
       
           <div id="wrap activites">
         <form action="" id="cakeform" onsubmit="return false;">
-        <div>
+        <div class="wrapper-insc">
             <div class="cont_order">
                <fieldset>
-    <h3>Activités</h3>
+    <h4>Activités</h4>
                 <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round6" onclick="calculateTotal()" />Conférence du vendredi seulement&nbsp;&nbsp;<strong>20$</strong></label><br/>
-                <h4>Toute la session, conférence incluse :</h4>
+                <br>
+                <div class="wrap-session">
+                <h5>Toute la session, conférence incluse :</h5>
                 <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round8" onclick="calculateTotal()" />Avec repas&nbsp;&nbsp;<strong>105$</strong></label><br/>
                 <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round10" onclick="calculateTotal()" />Sans repas&nbsp;&nbsp;<strong>90$</strong></label><br/>
-                <h4>Tarif étudiant, conférence incluse :</h4>
+                </div>
+                
+                <div class="wrap-session">
+                <h5>Tarif étudiant, conférence incluse :</h5>
                 <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" />Avec repas&nbsp;&nbsp;<strong>95$</strong></label><br/>
-                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" />Sans repas&nbsp;&nbsp;<strong>80$</strong></label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" />Sans repas&nbsp;&nbsp;<strong>80$</strong></label><br/></div>
                 <br/>
                 
+                <div style="clear:both"></div>
+                <br>
+                <h5>Choix d'atelier :</h5>
+                <div class="wrap-atelier">
                 
-                
-                <label >Filling</label>
+                <label class="choix-act">1<sup>er</sup>choix</label>
          
-                <select id="filling" name='filling' onchange="calculateTotal()">
-                <option value="None">Select Filling</option>
-                <option value="Lemon">Lemon($5)</option>
-                <option value="Custard">Custard($5)</option>
-                <option value="Fudge">Fudge($7)</option>
-                <option value="Mocha">Mocha($8)</option>
-                <option value="Raspberry">Raspberry($10)</option>
-                <option value="Pineapple">Pineapple($5)</option>
-                <option value="Dobash">Dobash($9)</option>
-                <option value="Mint">Mint($5)</option>
-                <option value="Cherry">Cherry($5)</option>
-                <option value="Apricot">Apricot($8)</option>
-                <option value="Buttercream">Buttercream($7)</option>
-                <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
+                <select id="filling" name='filling' onchange="calculateTotal()" value='Cliquez ici'>
+                <option value="choix1">Corps sacré, corps tabou, corps objet</option>
+                <option value="choix2">Le corps qui danse</option>
+                <option value="choix3">Un corps pèlerin, un être en déplacement</option>
+                <option value="choix4">Le corps qui chante</option>
+                <option value="choix5">Quand la Bible dit «corps»</option>
+                <option value="choix6">Ce corps que nous sommes</option>
+                <option value="choix7">La posture spirituelle: passer par le corps pour atteindre l'Esprit</option>
+
                </select>
-                <br/>
+               </div>
+         
+                <div class="wrap-atelier">
+                 <label class="choix-act">2<sup>eme</sup> choix</label>
+         
+                <select id="filling" name='filling' onchange="calculateTotal()" value='Cliquez ici'>
+                <option value="choix1">Corps sacré, corps tabou, corps objet</option>
+                <option value="choix2">Le corps qui danse</option>
+                <option value="choix3">Un corps pèlerin, un être en déplacement</option>
+                <option value="choix4">Le corps qui chante</option>
+                <option value="choix5">Quand la Bible dit «corps»</option>
+                <option value="choix6">Ce corps que nous sommes</option>
+                <option value="choix7">La posture spirituelle: passer par le corps pour atteindre l'Esprit</option>
+
+               </select>
+               </div>
+              
                 
                 <!--
                 <p>
@@ -291,11 +306,17 @@
                 <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
                 <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
                 </p>-->
-                <div id="totalPrice"></div>
+     
                 
                 </fieldset>
+                
+                
+                
+                
             </div>
             
+            
+            <!--
         	<div class="cont_details">
             	<fieldset>
                 <legend>Contact Details</legend>
@@ -311,10 +332,21 @@
                 </fieldset>
             </div>
             <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
-        </div>  
+        </div> 
+        -->
+        
+         
        </form>
-	</div><!--End of wrap-->
-      
+       
+                 <p class="wrapper-input bouton-rajout">
+                    <input name="bouton-rajout" id="bouton-rajout" type="submit" class="inputbox form-enregi" alt="username" size="18"value="Sauvegarder">
+                </p>
+               
+       
+	</div>  </div>
+    
+    
+
       
       
       
@@ -325,16 +357,28 @@
    
                  
                  </div>
+                 
+                 
+                 
                  <!-- Fin participant unique --> 
             </div>
            <!-- FIN PARTICIPANTS -->
-           
+                <p class="wrapper-input bouton-rajout">
+                    <input name="bouton-rajout" id="bouton-rajout" type="submit" class="inputbox form-enregi" alt="username" size="18"value="Rajouter un participant">
+                </p>
            
             
             <div style="clear:both"></div>
          
-            
-            
+         
+    <hr>            <div class="wrapper-total">
+                <div class="">
+                <h6>Total de la commande<span id="totalPrice"></span>
+                    </h6>   
+                 </div>      
+            </div>
+                 <div style="clear:both"></div>
+          <hr>    
             <div class="inscription">
                 <h3>Coordonnées du payeur</h3>
                 <div style="clear:both"></div>

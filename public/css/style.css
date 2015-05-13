@@ -235,15 +235,21 @@ a.btn  {
 }
 
 
-    .navigation > ul > li > a {
-      padding: 50px 20px;
-  font-size: 14px;
+.navigation > ul > li > a:hover {
+  color: #262261;
+
+    }
+
+
+.navigation > ul > li > a {
+    padding: 60px 40px 40px 0px;
+  font-size: 15px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: none;
-  color: GRAY;
+  color: #444444;
   transition: all 0.25s ease 0s;
   -webkit-transition: all 0.25s ease 0s;
   -moz-transition: all 0.25s ease 0s;
@@ -662,7 +668,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-        padding: 10px 15px;
+        padding: 0px 15px;
         transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
         -webkit-transition: all 0.2s ease 0s;
@@ -1555,6 +1561,51 @@ header.sticky .navigation a.current-ele {
 
 @media (min-width: 768px) {
 
+
+
+.page-sec .ptb {
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+
+.page-sec h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+
+.page-sec h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+
+.page-sec p {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 15px 0 15px 0;
+  color: #434343;
+  letter-spacing: 1px;
+}
+
+
+.logo.page-sec img {
+      width: 80%;
+}
+
+
+label.choix-act {
+    width: 100%;   
+}
+
+
+
+
+
+
 /*  LOGO WOW */
 .wow .col-md-3.assomption img {
     width: 60%;
@@ -1780,7 +1831,7 @@ input.checkbox {
 
 
 .participants {
-    width: 715px;   
+    width: 900px;   
 }
 
 .participants p {
@@ -1801,7 +1852,7 @@ input.checkbox {
 }
 
 .participants input, .participants select  {
-    height: 40px; 
+    height: 30px; 
 }
 
 .participants select  {
@@ -1844,7 +1895,7 @@ input.checkbox {
 
 .participants-uniques .wrapper {
  /* background-color: rgb(48, 48, 48);*/
- background-color: #F7F7F7;
+ background-color: ;
   padding: 0px 0px 0px 0px;
   border-radius: 10px;
   margin-bottom: 20px; 
@@ -1863,18 +1914,17 @@ input.checkbox {
 
 .participants-uniques label, .participants span.paran   {
    color: rgb(75, 75, 75);
-   font-size: 16px;
+   font-size: 14px;
 
 }
 
 .participants-uniques h4 {
   text-transform: uppercase;
-  background-color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
- /* border: 1px solid rgb(175, 175, 175);*/
+
  padding: 10px 0px 10px 0px;
- background-color: rgb(252, 252, 252);
+
     
 }
 
@@ -1955,6 +2005,73 @@ p.bouton-rajout {
 
 
 @media (min-width: 768px) {
+    
+    
+    .wrapper-total {
+       padding: 20px 20px 10px 20px;
+
+    }
+    
+    #totalPrice {
+        
+    }
+    
+    #totalPrice {
+          float: right;
+    }
+    
+    .wrapper-insc h5{
+         width: 100%;
+    }
+    .wrap-session {
+        float: left;
+        
+    }
+    
+    .wrap-atelier {
+         float: left;
+            width: 100%;
+        max-width: 200px;
+     margin-right: 25px;
+         
+    }
+    
+     .wrap-session {
+     margin-right: 25px; 
+    }
+    
+     .wrap-atelier select {
+    width: 200px;
+         
+    }
+    
+    
+    .wrapper p {
+      line-height: 20px;
+      font-size: 12px;
+      font-weight: 300;
+      margin: 0px 0 15px 0px;
+      color: #434343;
+      letter-spacing: 1px;
+    }
+    
+    .wrapper-insc {
+          margin-left: 20px;
+        
+    }
+    
+    .coordonnees h4 {
+        margin-left: 20px;
+        text-transform: uppercase;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 10px 0px 0px 0px;
+    }
+    
+    hr.diviseur {
+        width: 95%;
+        border-top: 1px solid #BCBCD4;
+    }
 }
 
 
@@ -2633,7 +2750,7 @@ p.bouton-rajout {
 
 .inner-intro.sub-pages {
     background-color: #f7f7f7;
-    height: 200px;
+    height: 180px;
     display: block;
     position: relative;
 }
@@ -4119,6 +4236,7 @@ ul.project-detail-block, .project-detail-block ul {
         .nf-carousel-theme .owl-controls .owl-buttons .owl-prev:hover,
         .nf-carousel-theme .owl-controls .owl-buttons .owl-next:hover {
             /*background: #fff;*/
+
             color: #e6ae49;
         }
 
