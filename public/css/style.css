@@ -695,8 +695,7 @@ label {
     margin-bottom: 10px;
     padding-right: 3px;
     margin-top: 6px;
-    font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+
 }
 
 .form-full {
@@ -1790,6 +1789,17 @@ input.checkbox {
 }
 
 
+.radiolabel input {
+    height: 15px !important;
+    width: 15px;
+    -webkit-appearance: radio;
+      margin-right: 10px !important; 
+}
+
+.participants input, .participants select  {
+    height: 40px; 
+}
+
 .participants input, .participants select  {
     height: 40px; 
 }
@@ -1863,7 +1873,7 @@ input.checkbox {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
  /* border: 1px solid rgb(175, 175, 175);*/
- padding: 10px 0px 10px 10px;
+ padding: 10px 0px 10px 0px;
  background-color: rgb(252, 252, 252);
     
 }

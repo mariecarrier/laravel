@@ -27,9 +27,13 @@
 <link href='http://fonts.googleapis.com/css?family=Hind:400,500,600,700,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montez|Qwigley' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet" type="text/css">
+<link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/formcalculations.js"></script>
+
 </head>
 
-<body class="full-intro">
+<body class="full-intro" onload='hideTotal()'>
 
 <!-- Preloader --> 
 <!--<section id="preloader">
@@ -211,6 +215,11 @@
                     <span class="paran"> - </span>
                     <input name="mAreaCodeDayTextBox" type="text" maxlength="4" id="mAreaCodeDayTextBox" class="case3">
                 </p>
+                
+                
+                
+                   
+      
                 <p class="wrapper-input courriel">
                     <label for="courriel">Courriel</label>
                     <br>
@@ -225,6 +234,92 @@
                     <input name="bouton-rajout" id="bouton-rajout" type="submit" class="inputbox form-enregi" alt="username" size="18"value="Rajouter un participant">
                 </p>
                 
+                
+                
+                <div style="clear:both"></div>
+                
+                
+                
+                
+               
+      
+          <div id="wrap activites">
+        <form action="" id="cakeform" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+    <h3>Activités</h3>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round6" onclick="calculateTotal()" />Conférence du vendredi seulement&nbsp;&nbsp;<strong>20$</strong></label><br/>
+                <h4>Toute la session, conférence incluse :</h4>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round8" onclick="calculateTotal()" />Avec repas&nbsp;&nbsp;<strong>105$</strong></label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round10" onclick="calculateTotal()" />Sans repas&nbsp;&nbsp;<strong>90$</strong></label><br/>
+                <h4>Tarif étudiant, conférence incluse :</h4>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" />Avec repas&nbsp;&nbsp;<strong>95$</strong></label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Round12" onclick="calculateTotal()" />Sans repas&nbsp;&nbsp;<strong>80$</strong></label><br/>
+                <br/>
+                
+                
+                
+                <label >Filling</label>
+         
+                <select id="filling" name='filling' onchange="calculateTotal()">
+                <option value="None">Select Filling</option>
+                <option value="Lemon">Lemon($5)</option>
+                <option value="Custard">Custard($5)</option>
+                <option value="Fudge">Fudge($7)</option>
+                <option value="Mocha">Mocha($8)</option>
+                <option value="Raspberry">Raspberry($10)</option>
+                <option value="Pineapple">Pineapple($5)</option>
+                <option value="Dobash">Dobash($9)</option>
+                <option value="Mint">Mint($5)</option>
+                <option value="Cherry">Cherry($5)</option>
+                <option value="Apricot">Apricot($8)</option>
+                <option value="Buttercream">Buttercream($7)</option>
+                <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
+               </select>
+                <br/>
+                <p>
+                <label for='includecandles' class="inlinelabel">Include Candles($5)</label>
+               <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" />
+               </p>
+               
+                <p>
+                <label class="inlinelabel" for='includeinscription'>Include Inscription($20)</label>
+                <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
+                <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
+                </p>
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Contact Details</legend>
+                <label for='name'>Name</label>
+                <input type="text" id="name" name='name' />
+                <br/>
+                <label for='address'>Address</label>
+                <input type="text" id="address" name='address' />
+                <br/>
+                <label for='phonenumber'>Phone Number</label>
+                <input type="text"  id="phonenumber" name='phonenumber'/>
+                <br/>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+      
+      
+      
+      
+      
+      
+      
+      
+   
                  
                  </div>
                  <!-- Fin participant unique --> 
